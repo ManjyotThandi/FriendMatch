@@ -29,4 +29,8 @@ routes.homePage(app);
 
 postRequest.postRequest(app, friends.friends);
 
+// for the display of friends
+
+postRequest.getRequest(app,friends.friends)
+
 

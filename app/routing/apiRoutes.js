@@ -33,6 +33,12 @@ var postRequest = function(app, friends){
 })
 }
 
+var getRequest = function(app,friends){
+    app.get("/api/friends", function(req,res){
+        res.json(friends)
+    })
+}
+
 module.exports = {
-    postRequest
+    postRequest,getRequest
 }
