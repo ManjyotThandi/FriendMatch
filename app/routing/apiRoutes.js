@@ -4,10 +4,10 @@ var postRequest = function(app, friends){
     console.log("New friend is added")
 
     console.log(friends);
-    // send it back to front end so it will console.log on ui
     var lowest = 100
     var diff = 0;
     var match;
+    var picture;
     
     // logic to compare the values
     for(i=0; i < friends.length; i++){
@@ -19,12 +19,16 @@ var postRequest = function(app, friends){
         if (Math.abs(diff) < lowest){
             lowest = diff;
             match = friends[i].name;
+            picture = friends[i].photo;
             console.log(match);
+            console.log('It gets here')
+            console.log(picture);
         }
         diff = 0;
     }
     
-    res.json(match);
+    res.json({match,picture});
+
     console.log("This is the lowest" + lowest)
 })
 }

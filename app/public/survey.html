@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Links for bootstrap and JQuery-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
@@ -13,62 +14,150 @@
 </head>
 
 <body>
-    <form>
-        <div class="form-group">
-            <label for="FirstName">Name (Required)</label>
-            <input type="text" class="form-control" id="firstName">
+    <div class= 'jumbotron'>
+        <div class ='row'>
+            <div class= 'col-md-4'>
+            </div>
+            <div class = 'col-md-4'>
+                <h1 style="text-align: center">Questionnaire</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="FirstName">Name</label>
+                        <input type="text" class="form-control" id="firstName">
+                    </div>
+                    <div class="form-group">
+                        <label for="LastName">Link to Photo Image (Not Required)</label>
+                        <input type="text" class="form-control" id="lastName">
+                    </div>
+                    <div class="form-group">
+                        <label for="outgoing">Your mind is always buzzing with unexplored ideas and plans.</label>
+                        <select class="form-control" id="Q1">
+                            <option hidden >Select an option</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="outgoing">Generally speaking, you rely more on your experience than your imagination.</label>
+                        <select class="form-control" id="Q2">
+                            <option hidden >Select an option</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="outgoing">You find it easy to stay relaxed and focused even when there is some pressure.</label>
+                        <select class="form-control" id="Q3">
+                            <option hidden >Select an option</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="outgoing">You rarely do something just out of sheer curiosity.</label>
+                        <select class="form-control" id="Q4">
+                            <option hidden >Select an option</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="outgoing">People can rarely upset you.</label>
+                        <select class="form-control" id="Q5">
+                            <option hidden >Select an option</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="outgoing">It is often difficult for you to relate to other people’s feelings.</label>
+                        <select class="form-control" id="Q6">
+                            <option hidden >Select an option</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="outgoing">In a discussion, truth should be more important than people’s sensitivities.</label>
+                        <select class="form-control" id="Q7">
+                            <option hidden >Select an option</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="outgoing">You rarely get carried away by fantasies and ideas.</label>
+                        <select class="form-control" id="Q8">
+                            <option hidden >Select an option</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="outgoing">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label>
+                        <select class="form-control" id="Q9">
+                            <option hidden >Select an option</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="outgoing">You feel more energetic after spending time with a group of people.</label>
+                        <select class="form-control" id="Q10">
+                            <option hidden >Select an option</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                </form>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="LastName">Link to Photo Image (Required)</label>
-            <input type="text" class="form-control" id="lastName">
-        </div>
-        <div class="form-group">
-            <label for="outgoing">Q1</label>
-            <select class="form-control" id="outgoing">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="outgoing">Q2</label>
-            <select class="form-control" id="playful">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="outgoing">Q3</label>
-            <select class="form-control" id="funny">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
-        </div>
-        <button type="submit" class="btn btn-primary" id="submit">Submit</button>
-    </form>
+    </div>
 
 <!-- This is for the modal popup.-->
     <div class="modal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <h5 class="modal-title">Your Match!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" id='x'>
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Save changes</button>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal" id='close'>Close</button>
                 </div>
             </div>
@@ -82,23 +171,43 @@
             var newFriend = {
                 name: $("#firstName").val().trim(),
                 scores: [
-                    $("#outgoing").val().trim(),
-                    $("#playful").val().trim(),
-                    $("#funny").val().trim()
+                    $("#Q1").val().trim(),
+                    $("#Q2").val().trim(),
+                    $("#Q3").val().trim(),
+                    $("#Q4").val().trim(),
+                    $("#Q5").val().trim(),
+                    $("#Q6").val().trim(),
+                    $("#Q7").val().trim(),
+                    $("#Q8").val().trim(),
+                    $("#Q9").val().trim(),
+                    $("#Q10").val().trim()
                 ]
             }
 
+            if($("#firstName").val().trim() === '' ){
+                return alert("Please fill out all fields")
+            }
+
+            for(i=0;i< newFriend.scores.length; i++){
+                if(newFriend.scores[i] === "Select an option"){
+                   return alert ("Please fill out all fields")
+                }
+            }
             $.post("/api/friends", newFriend)
                 .then(function (data) {
-                    console.log("this is the data" + data)
-                    var Best = data
-                    $(".modal-body").append(`<p> Congratulations you have matched with ${data}</p>`)
+                    console.log("this is the data" + data.match)
+                    $(".modal-body").append(`<p> Congratulations you have matched with ${data.match}</p>
+                    <img src="${data.photo}"> `)
                     $(".modal").show();
                     $("#close").on("click", function () {
-                        $(".modal").hide();
+                        location.reload();
                     })
+                    $("#x").on("click", function () {
+                        location.reload();
+                    })
+                    
                 })
-        })
+         })
     </script>
 </body>
 
